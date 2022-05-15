@@ -1,0 +1,115 @@
+.gallery-block {
+    margin-top: 3rem;
+    text-align: center;
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.5fr 1fr;
+        position: relative;
+    }
+    
+    img {
+        width: 100%;
+        height: 45vh;
+        object-fit: cover;
+        filter: brightness(0.8);
+    }
+    
+    /* спрятанный текст галлереи */
+    
+    .item {
+        position: relative;
+    }
+        
+    .item:hover .text {
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .text {
+        position: absolute;
+        display: none;
+        width: 80%;
+        text-align: center;
+        color: white;
+
+
+        /* кнопка галереи */
+        button {
+            margin-top: 0.5rem;
+            color: white;
+            border: 1px solid white;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+        
+    }
+
+    /* стрелки слайдера */
+    .prev, .next {
+        display: none;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-top: 5px solid white;
+        cursor: pointer;
+        opacity: 0.5;
+        z-index: 1;
+    }
+
+    .prev {
+        border-left: 5px solid white;
+        transform: rotate(-45deg);
+    }
+
+    .next {
+        border-right: 5px solid white;
+        transform: rotate(45deg);
+    }
+
+    .gallery-grid:hover .prev, .gallery-grid:hover .next {
+        display: block;
+        top: 50%;
+    }
+
+    .gallery-grid:hover {
+        .prev {
+            left: 2%;
+        }
+
+        .next {
+            right: 2%;
+        }
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 849px) {
+    .gallery-block {
+        .gallery-grid {
+            display: grid;     
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        .item3, .item2 {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 399px) and (max-width: 599px) {
+    .gallery-block {
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    
+        .item4, .item3, .item2 {
+            display: none;
+        }
+    }
+}

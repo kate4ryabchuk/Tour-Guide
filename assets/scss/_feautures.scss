@@ -1,0 +1,89 @@
+.feautures {
+    height: 90vh;
+    margin-top: 3rem;
+    text-align: center;
+
+    .cards-feautures {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 40vh;
+        font-size: 1.1rem;
+    }
+    
+    .content-feautures {
+        width: 75%;
+
+        img {
+            width: 25px;
+        }
+    }
+
+    .card-1, .card-2 {
+        border-right: 1px solid rgb(196, 194, 194);
+        border-bottom: 1px solid rgb(196, 194, 194);
+    }
+    
+    .card-3 {
+        border-bottom: 1px solid rgb(196, 194, 194);
+    }
+    
+    .card-4, .card-5 {
+        border-right: 1px solid rgb(196, 194, 194);
+    }
+    
+}
+
+
+@media (min-width: 600px) and (max-width: 849px) {
+    .feautures {
+        height: 100vh;
+
+        .card {
+            width: 40%;
+            height: 30vh;
+            font-size: 0.9rem;
+        }
+    
+        .card-1, .card-2, .card-3, .card-4 {
+            border-bottom: 1px solid rgb(196, 194, 194);
+        }
+    
+        .card-2, .card-4 {
+            border-right: 0;
+        }
+        
+        .card-3 {
+            border-right: 1px solid rgb(196, 194, 194);
+        }
+    }
+}
+
+
+@media (min-width: 399px) and (max-width: 599px) {
+    .feautures {
+        height: 180vh;
+
+        .card {
+            width: 70%;
+            height: 28vh;
+            font-size: 0.9rem;
+        }
+    
+        .card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+            border-right: 0;
+            border-bottom: 1px solid rgb(196, 194, 194);
+        }
+    
+        .content-feautures {
+            width: 70%;
+        }
+    }
+}

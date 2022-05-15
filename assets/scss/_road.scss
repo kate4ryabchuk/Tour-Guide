@@ -1,0 +1,97 @@
+.section-road {
+    display: flex;
+    height: 92vh;
+    border-bottom: 1px solid rgb(196, 194, 194);
+
+    .text-road, .bg-road {
+        width: 50%;
+    }
+
+    /* Текст блока road */
+    .text-road {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 5rem;
+        text-align: justify;
+
+        h1 {
+            margin: 0;
+            padding-bottom: 1rem;
+            font-weight: normal;
+            font-size: 2.5rem;
+        }
+
+        div  {
+            p:first-of-type {
+                margin: 0;
+                font-size: 1.1rem;
+            }
+            
+            p:last-of-type {
+                margin-bottom: 0;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    /* Фон блока road */
+    .bg-road {
+        height: 92vh;
+        background-image: url(../assets/img/koster.jpeg);
+        background-size: cover;
+        filter: brightness(0.8);
+    }
+}
+
+
+
+@media (min-width: 600px) and (max-width: 849px) {
+    .section-road {
+        height: 80vh;
+
+        .text-road, .bg-road {
+            height: 80vh;
+        }
+    
+        .text-road {
+            padding: 0 2.5rem;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            div {
+                p:first-of-type, p:last-of-type {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 399px) and (max-width: 599px) {
+    .section-road {
+        height: 120vh;
+        flex-direction: column-reverse;
+
+        .text-road, .bg-road {
+            width: 100%;
+            height: 60vh;
+        }
+
+        .text-road {
+            padding: 0 3rem;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            div {
+                p:first-of-type,  p:last-of-type {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

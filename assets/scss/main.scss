@@ -1,0 +1,26 @@
+@import './variables';
+@import './button';
+@import './header';
+@import './road';
+@import './stories';
+@import './gallery';
+@import './feautures';
+@import './write-to-us';
+@import './footer';
+
+
+@font-face {
+    font-family: Garamond;
+    src: url(./../assets/fonts/Garamond/EBGaramond-VariableFont_wght.ttf);
+}
+
+
+body {
+    margin: auto;
+    width: 100%;
+    font-family: Garamond;
+}
+
+* {
+    box-sizing: border-box;
+}
