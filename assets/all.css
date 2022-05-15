@@ -16,6 +16,14 @@ button:hover {
   transition: 1s;
 }
 
+footer .footer-icons {
+  flex-direction: row;
+}
+
+footer {
+  flex-direction: column;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -102,8 +110,8 @@ header .line {
 }
 .section-road .text-road {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   padding: 0 5rem;
   text-align: justify;
 }
@@ -171,8 +179,8 @@ header .line {
 }
 .story-1 .text-story, .story-2 .text-story {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   width: 70%;
   padding: 0 5rem;
   text-align: justify;
@@ -434,8 +442,8 @@ header .line {
 }
 .write-to-us .main-info {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
   width: 100%;
   text-align: left;
   margin-top: 1.5rem;
@@ -482,8 +490,8 @@ header .line {
 }
 .write-to-us .human-send {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
   text-align: left;
   width: 100%;
   margin-top: 1.5rem;
@@ -530,7 +538,6 @@ header .line {
 }
 footer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 25vh;
@@ -538,7 +545,6 @@ footer {
 }
 footer .footer-icons {
   display: flex;
-  flex-direction: row;
 }
 footer .footer-icons img {
   width: 40px;

@@ -1,7 +1,7 @@
 .section-road {
     display: flex;
     height: 92vh;
-    border-bottom: 1px solid rgb(196, 194, 194);
+    border-bottom: 1px solid $grayLight;
 
     .text-road, .bg-road {
         width: 50%;
@@ -9,9 +9,7 @@
 
     /* Текст блока road */
     .text-road {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include directionFlex(flex, center, column);
         padding: 0 5rem;
         text-align: justify;
 

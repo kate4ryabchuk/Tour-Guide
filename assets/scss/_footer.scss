@@ -1,19 +1,17 @@
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexMix(flex, center, center);
+    @extend %col;
     height: 25vh;
-    border-top: 1px solid rgb(196, 194, 194);
+    border-top: 1px solid $grayLight;
 
     .footer-icons {
         display: flex;
-        flex-direction: row;
+        @extend %row;
 
         img {
             width: 40px;
             padding: 0.5rem;
-            border: 1px solid rgb(196, 194, 194);
+            border: 1px solid $grayLight;
             border-radius: 50%;
             transition: 1s;
         }

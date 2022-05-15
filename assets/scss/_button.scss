@@ -3,14 +3,14 @@ button {
     padding: 0.5rem 1.1rem;
     font-size: 0.9rem;
     background-color: transparent;
-    color: rgb(196, 194, 194);
-    border: 1px solid rgb(196, 194, 194);
+    color: $grayLight;
+    border: 1px solid $grayLight;
     border-radius: 3px;
     transition: 1s;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: rgb(236, 231, 231);
+    background-color: $buttonGallery;
     transition: 1s;
 }

@@ -1,0 +1,35 @@
+%row {
+    flex-direction: row;
+}
+
+%col {
+    flex-direction: column;
+}
+
+@mixin justify-content($flex, $justify-content) {
+    display: $flex;
+    justify-content: $justify-content;
+}
+
+@mixin direction($flex, $flex-direction) {
+    display: $flex;
+    flex-direction: $flex-direction;
+}
+
+@mixin flexMix($flex, $justify-content, $align-items) {
+    display: $flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin flexWrap($flex, $justify-content, $flex-wrap) {
+    display: $flex;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content;
+}
+
+@mixin directionFlex($flex, $justify-content, $flex-direction) {
+    display: $flex;
+    justify-content: $justify-content;
+    flex-direction: $flex-direction;
+}

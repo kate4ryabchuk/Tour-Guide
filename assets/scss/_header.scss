@@ -1,7 +1,5 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexMix(flex, space-between, center);
     height: 8vh;
     padding: 0 2rem;
     border-bottom: 1px solid $grayLight;
@@ -35,7 +33,7 @@ header {
 
     a {
         text-decoration: none;
-        color: black;
+        color: $black;
     }
 
     .icons {
@@ -59,9 +57,8 @@ header {
     
     .line {
         margin-bottom: 1px;
-        border: 2px solid black; 
+        border: 2px solid $black; 
     }    
-
 }
 
 

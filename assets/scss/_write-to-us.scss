@@ -6,14 +6,12 @@
     margin: 3rem 0 0 0;
 
     form {
-        display: flex;
-        justify-content: center;
+        @include justify-content(flex, center);
         width: 100%;
     }
     
     .form-container {
-        display: flex;
-        flex-direction: column;
+        @include direction(flex, column);
         width: 60%;
     }
     
@@ -25,27 +23,23 @@
     input, textarea, select {
         padding: 0.4rem;
         border-radius: 5px;
-        border: 1px solid rgb(196, 194, 194);
+        border: 1px solid $grayLight;
     }
     
     .main-info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include directionFlex(flex, space-between, row);
         width: 100%;
         text-align: left;
         margin-top: 1.5rem;
     }
     
     .input-main-info {
-        display: flex;
-        flex-direction: column;
+        @include direction(flex, column);
         width: 32.5%;
     }
     
     .radio {
-        display: flex;
-        flex-direction: row;
+        @include direction(flex, row);
 
         span {
             margin-left: 0.5rem;
@@ -54,8 +48,7 @@
     }
     
     .contact-me {
-        display: flex; 
-        flex-direction: row;
+        @include direction(flex, row);
         margin-top: 1.5rem; 
 
         label {
@@ -65,8 +58,7 @@
     }
     
     .topic {
-        display: flex;
-        flex-direction: column;
+        @include direction(flex, column);
         width: 100%;
         margin-top: 1.5rem;
         text-align: left;
@@ -78,24 +70,20 @@
     }
     
     .message {
-        display: flex;
-        flex-direction: column;
+        @include direction(flex, column);
         text-align: left;
         width: 100%;
         margin-top: 1.5rem;
     }
     
     .human-send {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include directionFlex(flex, space-between, row);
         text-align: left;
         width: 100%;
         margin-top: 1.5rem;
 
         div {
-            display: flex;
-            flex-direction: row;
+            @include direction(flex, row);
 
             label {
                 margin-left: 1rem;

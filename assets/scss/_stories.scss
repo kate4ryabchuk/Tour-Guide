@@ -1,12 +1,10 @@
 .story-1, .story-2 {
     display: flex;
     height: 60vh;
-    border-bottom: 1px solid rgb(196, 194, 194); 
+    border-bottom: 1px solid $grayLight;
 
     .text-story {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include directionFlex(flex, center, column);
         width: 70%;
         padding: 0 5rem;
         text-align: justify;
