@@ -1,7 +1,7 @@
 footer {
     @include flexMix(flex, center, center);
     @extend %col;
-    height: 25vh;
+    height: 150px;
     border-top: 1px solid $grayLight;
 
     .footer-icons {
@@ -28,18 +28,15 @@ footer {
 
     p {
         margin-top: 1rem;
+        margin-bottom: 0;
     }
     
 }
 
 
-
-@media (min-width: 600px) and (max-width: 849px) {
-}
-
-@media (min-width: 399px) and (max-width: 599px) {
-    footer {    
-        height: 20vh;
+@media (min-width: 440px) and (max-width: 599px) {
+    footer {   
+        height: 110px;
 
         .footer-icons {
             img {

@@ -1,5 +1,4 @@
 .feautures {
-    height: 90vh;
     margin-top: 3rem;
     text-align: center;
 
@@ -10,7 +9,7 @@
     .card {
         @include flexMix(flex, center, center);
         width: 30%;
-        height: 40vh;
+        height: 300px;
         font-size: 1.1rem;
     }
     
@@ -22,16 +21,16 @@
         }
     }
 
-    .card-1, .card-2 {
+    .card:nth-of-type(1), .card:nth-of-type(2) {
         border-right: 1px solid $grayLight;
         border-bottom: 1px solid $grayLight;
     }
-    
-    .card-3 {
+
+    .card:nth-of-type(3) {
         border-bottom: 1px solid $grayLight;
     }
-    
-    .card-4, .card-5 {
+
+    .card:nth-of-type(3n+1), .card:nth-of-type(3n+2) {
         border-right: 1px solid $grayLight;
     }
     
@@ -40,44 +39,45 @@
 
 @media (min-width: 600px) and (max-width: 849px) {
     .feautures {
-        height: 100vh;
 
         .card {
             width: 40%;
-            height: 30vh;
+            height: 250px;
             font-size: 0.9rem;
         }
-    
-        .card-1, .card-2, .card-3, .card-4 {
+
+        .card:nth-of-type(3) {
+            border-right: 1px solid $grayLight;
+        }
+
+        .card:nth-of-type(4) {
             border-bottom: 1px solid $grayLight;
         }
-    
-        .card-2, .card-4 {
-            border-right: 0;
-        }
-        
-        .card-3 {
-            border-right: 1px solid $grayLight;
+
+        .card:nth-of-type(2), .card:nth-of-type(4) {
+            border-right: none;
         }
     }
 }
 
 
-@media (min-width: 399px) and (max-width: 599px) {
+@media (min-width: 440px) and (max-width: 599px) {
     .feautures {
-        height: 180vh;
 
         .card {
             width: 70%;
-            height: 28vh;
+            height: 200px;
             font-size: 0.9rem;
         }
-    
-        .card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
-            border-right: 0;
+
+        .card:nth-of-type(1), .card:nth-of-type(2), .card:nth-of-type(3), .card:nth-of-type(4), .card:nth-of-type(5) {
+            border-right: none;
+        }
+
+        .card:nth-of-type(4), .card:nth-of-type(5), .card:nth-of-type(6) {
             border-bottom: 1px solid $grayLight;
         }
-    
+
         .content-feautures {
             width: 70%;
         }

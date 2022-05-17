@@ -10,7 +10,7 @@
     
     img {
         width: 100%;
-        height: 45vh;
+        height: 300px;
         object-fit: cover;
         filter: brightness(0.8);
     }
@@ -101,7 +101,7 @@
     }
 }
 
-@media (min-width: 399px) and (max-width: 599px) {
+@media (min-width: 440px) and (max-width: 599px) {
     .gallery-block {
         .gallery-grid {
             display: grid;

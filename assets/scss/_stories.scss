@@ -1,6 +1,6 @@
 .story-1, .story-2 {
     display: flex;
-    height: 60vh;
+    height: 400px;
     border-bottom: 1px solid $grayLight;
 
     .text-story {
@@ -10,14 +10,14 @@
         text-align: justify;
 
         p {
-            margin: 0;
+            margin: 0 0 1.5rem 0;
             font-size: 1.1rem;
         }
     }
 
     .bg-story-1, .bg-story-2 {
         width: 30%;
-        height: 60vh;
+        height: 400px;
         background-size: cover; 
         filter: brightness(0.8);
     }
@@ -44,21 +44,20 @@
 
 @media (min-width: 600px) and (max-width: 849px) {
     .story-1, .story-2 {
-        height: 70vh;
+        height: 450px;
 
         .text-story {
             width: 50%;
             padding: 0 2.5rem;
 
             p {
-                margin: 0;
                 font-size: 1rem;
             }
         }
 
         .bg-story-1, .bg-story-2 {
             width: 50%;
-            height: 70vh;
+            height: 450px;
         }
 
     }
@@ -70,14 +69,14 @@
     }
 }
 
-@media (min-width: 399px) and (max-width: 599px) {
+@media (min-width: 440px) and (max-width: 599px) {
     .story-1, .story-2 {
-        height: 100vh;
+        height: 700px;
         flex-direction: column;
     
         .text-story, .bg-story-1, .bg-story-2 {
             width: 100%;
-            height: 50vh;
+            height: 350px;
         }
     
         .text-story {  

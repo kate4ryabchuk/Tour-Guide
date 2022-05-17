@@ -1,6 +1,6 @@
 .write-to-us {
     width: 100%;
-    height: 105vh;
+    height: 650px;
     text-align: center;
     font-size: 1rem;
     margin: 3rem 0 0 0;
@@ -51,9 +51,14 @@
         @include direction(flex, row);
         margin-top: 1.5rem; 
 
-        label {
+        label[for=contactChoice1], label[for=contactChoice2], label[for=contactChoice3] {
             text-align: left;
-            margin-right: 1rem;
+            margin-left: 0.5rem;
+            font-weight: 100;
+        }
+
+        div input {
+            margin-left: 2rem;
         }
     }
     
@@ -99,6 +104,7 @@
 
 @media (min-width: 600px) and (max-width: 849px) {
     .write-to-us {
+        height: 600px;
         font-size: 0.9rem;
 
         .form-container {
@@ -107,9 +113,9 @@
     } 
 }
 
-@media (min-width: 399px) and (max-width: 599px) {
+@media (min-width: 440px) and (max-width: 599px) {
     .write-to-us {
-        height: 125vh;
+        height: 750px;
         font-size: 0.9rem;
 
         .form-container {
@@ -124,11 +130,6 @@
         .input-main-info {
             width: 100%;
             margin-top: 1rem;
-        }
-    
-        .contact-me {
-            flex-direction: column;
-            text-align: left;
         }
     }
 }

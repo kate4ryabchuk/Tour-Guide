@@ -1,6 +1,6 @@
 header {
     @include flexMix(flex, space-between, center);
-    height: 8vh;
+    height: 50px;
     padding: 0 2rem;
     border-bottom: 1px solid $grayLight;
 
@@ -83,7 +83,7 @@ header {
 }
 
 
-@media (min-width: 399px) and (max-width: 599px) {
+@media (min-width: 440px) and (max-width: 599px) {
     header {
         nav, .icons {
             display: none;

@@ -1,18 +1,27 @@
 @charset "UTF-8";
-button {
-  margin-top: 1.5rem;
+.btn {
+  text-decoration: none;
   padding: 0.5rem 1.1rem;
   font-size: 0.9rem;
-  background-color: transparent;
   color: rgb(196, 194, 194);
   border: 1px solid rgb(196, 194, 194);
   border-radius: 3px;
   transition: 1s;
 }
 
-button:hover {
+.btn-gray, .btn-white {
+  background-color: transparent;
+}
+
+.btn-gray:hover {
   cursor: pointer;
   background-color: rgb(236, 231, 231);
+  transition: 1s;
+}
+
+.btn-white:hover {
+  cursor: pointer;
+  background-color: white;
   transition: 1s;
 }
 
@@ -28,7 +37,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8vh;
+  height: 50px;
   padding: 0 2rem;
   border-bottom: 1px solid rgb(196, 194, 194);
 }
@@ -90,7 +99,7 @@ header .line {
     display: none;
   }
 }
-@media (min-width: 399px) and (max-width: 599px) {
+@media (min-width: 440px) and (max-width: 599px) {
   header nav, header .icons {
     display: none;
   }
@@ -100,7 +109,7 @@ header .line {
 }
 .section-road {
   display: flex;
-  height: 92vh;
+  height: 600px;
   border-bottom: 1px solid rgb(196, 194, 194);
   /* Текст блока road */
   /* Фон блока road */
@@ -126,11 +135,11 @@ header .line {
   font-size: 1.1rem;
 }
 .section-road .text-road div p:last-of-type {
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
 }
 .section-road .bg-road {
-  height: 92vh;
+  height: 600px;
   background-image: url(../assets/img/koster.jpeg);
   background-size: cover;
   filter: brightness(0.8);
@@ -138,10 +147,10 @@ header .line {
 
 @media (min-width: 600px) and (max-width: 849px) {
   .section-road {
-    height: 80vh;
+    height: 500px;
   }
   .section-road .text-road, .section-road .bg-road {
-    height: 80vh;
+    height: 500px;
   }
   .section-road .text-road {
     padding: 0 2.5rem;
@@ -153,14 +162,14 @@ header .line {
     font-size: 1rem;
   }
 }
-@media (min-width: 399px) and (max-width: 599px) {
+@media (min-width: 440px) and (max-width: 599px) {
   .section-road {
-    height: 120vh;
+    height: 800px;
     flex-direction: column-reverse;
   }
   .section-road .text-road, .section-road .bg-road {
     width: 100%;
-    height: 60vh;
+    height: 400px;
   }
   .section-road .text-road {
     padding: 0 3rem;
@@ -174,7 +183,7 @@ header .line {
 }
 .story-1, .story-2 {
   display: flex;
-  height: 60vh;
+  height: 400px;
   border-bottom: 1px solid rgb(196, 194, 194);
 }
 .story-1 .text-story, .story-2 .text-story {
@@ -186,12 +195,12 @@ header .line {
   text-align: justify;
 }
 .story-1 .text-story p, .story-2 .text-story p {
-  margin: 0;
+  margin: 0 0 1.5rem 0;
   font-size: 1.1rem;
 }
 .story-1 .bg-story-1, .story-1 .bg-story-2, .story-2 .bg-story-1, .story-2 .bg-story-2 {
   width: 30%;
-  height: 60vh;
+  height: 400px;
   background-size: cover;
   filter: brightness(0.8);
 }
@@ -211,33 +220,32 @@ header .line {
 
 @media (min-width: 600px) and (max-width: 849px) {
   .story-1, .story-2 {
-    height: 70vh;
+    height: 450px;
   }
   .story-1 .text-story, .story-2 .text-story {
     width: 50%;
     padding: 0 2.5rem;
   }
   .story-1 .text-story p, .story-2 .text-story p {
-    margin: 0;
     font-size: 1rem;
   }
   .story-1 .bg-story-1, .story-1 .bg-story-2, .story-2 .bg-story-1, .story-2 .bg-story-2 {
     width: 50%;
-    height: 70vh;
+    height: 450px;
   }
 
   .story-1 h3, .story-2 h3, .gallery-block h3, .feautures h3, .write-to-us h3 {
     font-size: 1.8rem;
   }
 }
-@media (min-width: 399px) and (max-width: 599px) {
+@media (min-width: 440px) and (max-width: 599px) {
   .story-1, .story-2 {
-    height: 100vh;
+    height: 700px;
     flex-direction: column;
   }
   .story-1 .text-story, .story-1 .bg-story-1, .story-1 .bg-story-2, .story-2 .text-story, .story-2 .bg-story-1, .story-2 .bg-story-2 {
     width: 100%;
-    height: 50vh;
+    height: 350px;
   }
   .story-1 .text-story, .story-2 .text-story {
     padding: 0 3rem;
@@ -267,7 +275,7 @@ header .line {
 }
 .gallery-block img {
   width: 100%;
-  height: 45vh;
+  height: 300px;
   object-fit: cover;
   filter: brightness(0.8);
 }
@@ -334,7 +342,7 @@ header .line {
     display: none;
   }
 }
-@media (min-width: 399px) and (max-width: 599px) {
+@media (min-width: 440px) and (max-width: 599px) {
   .gallery-block .gallery-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -344,7 +352,6 @@ header .line {
   }
 }
 .feautures {
-  height: 90vh;
   margin-top: 3rem;
   text-align: center;
 }
@@ -358,7 +365,7 @@ header .line {
   justify-content: center;
   align-items: center;
   width: 30%;
-  height: 40vh;
+  height: 300px;
   font-size: 1.1rem;
 }
 .feautures .content-feautures {
@@ -367,47 +374,43 @@ header .line {
 .feautures .content-feautures img {
   width: 25px;
 }
-.feautures .card-1, .feautures .card-2 {
+.feautures .card:nth-of-type(1), .feautures .card:nth-of-type(2) {
   border-right: 1px solid rgb(196, 194, 194);
   border-bottom: 1px solid rgb(196, 194, 194);
 }
-.feautures .card-3 {
+.feautures .card:nth-of-type(3) {
   border-bottom: 1px solid rgb(196, 194, 194);
 }
-.feautures .card-4, .feautures .card-5 {
+.feautures .card:nth-of-type(3n+1), .feautures .card:nth-of-type(3n+2) {
   border-right: 1px solid rgb(196, 194, 194);
 }
 
 @media (min-width: 600px) and (max-width: 849px) {
-  .feautures {
-    height: 100vh;
-  }
   .feautures .card {
     width: 40%;
-    height: 30vh;
+    height: 250px;
     font-size: 0.9rem;
   }
-  .feautures .card-1, .feautures .card-2, .feautures .card-3, .feautures .card-4 {
-    border-bottom: 1px solid rgb(196, 194, 194);
-  }
-  .feautures .card-2, .feautures .card-4 {
-    border-right: 0;
-  }
-  .feautures .card-3 {
+  .feautures .card:nth-of-type(3) {
     border-right: 1px solid rgb(196, 194, 194);
   }
-}
-@media (min-width: 399px) and (max-width: 599px) {
-  .feautures {
-    height: 180vh;
+  .feautures .card:nth-of-type(4) {
+    border-bottom: 1px solid rgb(196, 194, 194);
   }
+  .feautures .card:nth-of-type(2), .feautures .card:nth-of-type(4) {
+    border-right: none;
+  }
+}
+@media (min-width: 440px) and (max-width: 599px) {
   .feautures .card {
     width: 70%;
-    height: 28vh;
+    height: 200px;
     font-size: 0.9rem;
   }
-  .feautures .card-1, .feautures .card-2, .feautures .card-3, .feautures .card-4, .feautures .card-5, .feautures .card-6 {
-    border-right: 0;
+  .feautures .card:nth-of-type(1), .feautures .card:nth-of-type(2), .feautures .card:nth-of-type(3), .feautures .card:nth-of-type(4), .feautures .card:nth-of-type(5) {
+    border-right: none;
+  }
+  .feautures .card:nth-of-type(4), .feautures .card:nth-of-type(5), .feautures .card:nth-of-type(6) {
     border-bottom: 1px solid rgb(196, 194, 194);
   }
   .feautures .content-feautures {
@@ -416,7 +419,7 @@ header .line {
 }
 .write-to-us {
   width: 100%;
-  height: 105vh;
+  height: 650px;
   text-align: center;
   font-size: 1rem;
   margin: 3rem 0 0 0;
@@ -466,9 +469,13 @@ header .line {
   flex-direction: row;
   margin-top: 1.5rem;
 }
-.write-to-us .contact-me label {
+.write-to-us .contact-me label[for=contactChoice1], .write-to-us .contact-me label[for=contactChoice2], .write-to-us .contact-me label[for=contactChoice3] {
   text-align: left;
-  margin-right: 1rem;
+  margin-left: 0.5rem;
+  font-weight: 100;
+}
+.write-to-us .contact-me div input {
+  margin-left: 2rem;
 }
 .write-to-us .topic {
   display: flex;
@@ -509,15 +516,16 @@ header .line {
 
 @media (min-width: 600px) and (max-width: 849px) {
   .write-to-us {
+    height: 600px;
     font-size: 0.9rem;
   }
   .write-to-us .form-container {
     width: 80%;
   }
 }
-@media (min-width: 399px) and (max-width: 599px) {
+@media (min-width: 440px) and (max-width: 599px) {
   .write-to-us {
-    height: 125vh;
+    height: 750px;
     font-size: 0.9rem;
   }
   .write-to-us .form-container {
@@ -531,16 +539,12 @@ header .line {
     width: 100%;
     margin-top: 1rem;
   }
-  .write-to-us .contact-me {
-    flex-direction: column;
-    text-align: left;
-  }
 }
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25vh;
+  height: 150px;
   border-top: 1px solid rgb(196, 194, 194);
 }
 footer .footer-icons {
@@ -562,11 +566,12 @@ footer .circle-icon {
 }
 footer p {
   margin-top: 1rem;
+  margin-bottom: 0;
 }
 
-@media (min-width: 399px) and (max-width: 599px) {
+@media (min-width: 440px) and (max-width: 599px) {
   footer {
-    height: 20vh;
+    height: 110px;
   }
   footer .footer-icons img {
     width: 35px;

@@ -1,16 +1,26 @@
-button {
-    margin-top: 1.5rem;
+.btn {
+    text-decoration: none;
     padding: 0.5rem 1.1rem;
     font-size: 0.9rem;
-    background-color: transparent;
     color: $grayLight;
     border: 1px solid $grayLight;
     border-radius: 3px;
     transition: 1s;
 }
 
-button:hover {
+.btn-gray, .btn-white {
+    background-color: transparent;
+}
+
+.btn-gray:hover {
     cursor: pointer;
     background-color: $buttonGallery;
+
+    transition: 1s;
+}
+
+.btn-white:hover {
+    cursor: pointer;
+    background-color: $white;
     transition: 1s;
 }
